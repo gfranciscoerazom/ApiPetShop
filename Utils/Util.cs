@@ -16,9 +16,16 @@ namespace ApiPetShop.Utils
         {
             return new List<Cliente>()
             {
-                new Cliente(1, "Juan", "juan@gmail.com", "1234567890", "12345"),
+                new Cliente(1, "Juan", "juan@gmail.com", "1234567890", "12345")
+                {
+                    IsAdmin = true,
+                    Foto = "https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG-Picture.png"
+                },
                 new Cliente(2, "Pedro", "pedro@gmail.com", "1234567890", "12345"),
-                new Cliente(3, "Maria", "maria@gmail.com", "1234567890", "12345"),
+                new Cliente(3, "Maria", "maria@gmail.com", "1234567890", "12345")
+                {
+                    IsAdmin = true
+                },
                 new Cliente(4, "Luis", "luis@gmail.com", "1234567890", "12345")
             };
         }

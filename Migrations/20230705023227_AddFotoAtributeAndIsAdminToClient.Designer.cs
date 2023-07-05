@@ -2,6 +2,7 @@
 using ApiPetShop.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -10,9 +11,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ApiPetShop.Migrations
 {
     [DbContext(typeof(AppEFContext))]
-    partial class AppEFContextModelSnapshot : ModelSnapshot
+    [Migration("20230705023227_AddFotoAtributeAndIsAdminToClient")]
+    partial class AddFotoAtributeAndIsAdminToClient
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
